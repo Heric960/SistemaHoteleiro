@@ -15,6 +15,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -26,6 +28,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jFrame1 = new javax.swing.JFrame();
+        jPanel2 = new javax.swing.JPanel();
+        panel1 = new java.awt.Panel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jFrame2 = new javax.swing.JFrame();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        label1 = new java.awt.Label();
+        jSeparator2 = new javax.swing.JSeparator();
+        jPanel7 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuCadastro = new javax.swing.JMenu();
         menuCadHospede = new javax.swing.JMenu();
@@ -47,12 +62,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuCadServicosCadastro = new javax.swing.JMenuItem();
         menuCadServicosConsultar = new javax.swing.JMenuItem();
         menuReservas = new javax.swing.JMenu();
-        menuReservasCadastrar = new javax.swing.JMenu();
-        menuReservasConsultar = new javax.swing.JMenu();
-        menuReservasFinalizar = new javax.swing.JMenu();
+        menuReservasCadastrar = new javax.swing.JMenuItem();
+        menuReservasConsultar = new javax.swing.JMenuItem();
+        menuReservasFinalizar = new javax.swing.JMenuItem();
         menuVendas = new javax.swing.JMenu();
-        menuVendasProdutos = new javax.swing.JMenu();
-        menuVendasServicos = new javax.swing.JMenu();
+        menuVendasProdutos = new javax.swing.JMenuItem();
+        menuVendasServicos = new javax.swing.JMenuItem();
         menuFinaceiro = new javax.swing.JMenu();
         menuFinaceiroContasAPagar = new javax.swing.JMenu();
         menuFinaceiroContasAPagarCadastrar = new javax.swing.JMenuItem();
@@ -60,7 +75,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuFinaceiroContasAReceber = new javax.swing.JMenu();
         menuFinaceiroContasAReceberCadastrar = new javax.swing.JMenuItem();
         menuFinaceiroContasAReceberConsultar = new javax.swing.JMenuItem();
-        menuFinaceiroBalanco = new javax.swing.JMenu();
+        menuFinaceiroBalanco = new javax.swing.JMenuItem();
         menuRelatorios = new javax.swing.JMenu();
         menuRelatoriosFinanceiro = new javax.swing.JMenu();
         menuRelatoriosFinanceiroContasAPagar = new javax.swing.JMenuItem();
@@ -73,34 +88,51 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuRelatoriosVendas = new javax.swing.JMenu();
         menuRelatoriosVendasProdutos = new javax.swing.JMenuItem();
         menuRelatoriosVendasServicos = new javax.swing.JMenuItem();
-        menuRelatoriosHospedes = new javax.swing.JMenu();
-        menuRelatoriosFuncionarios = new javax.swing.JMenu();
-        menuRelatoriosFornecedores = new javax.swing.JMenu();
+        menuRelatoriosHospedes = new javax.swing.JMenuItem();
+        menuRelatoriosFuncionarios = new javax.swing.JMenuItem();
+        menuRelatoriosFornecedores = new javax.swing.JMenuItem();
         menuSeguranca = new javax.swing.JMenu();
-        menuSegurancaFazerBackup = new javax.swing.JMenu();
-        menuSegurancaRestaurarBackup = new javax.swing.JMenu();
+        menuSegurancaFazerBackup = new javax.swing.JMenuItem();
+        menuSegurancaRestaurarBackup = new javax.swing.JMenuItem();
         menuFerramentas = new javax.swing.JMenu();
         menuFerramentasTelaDeFundo = new javax.swing.JMenu();
         menuFerramentasTelaDeFundoAddImagem = new javax.swing.JMenuItem();
         menuFerramentasTelaDeFundoRemoverImagem = new javax.swing.JMenuItem();
         menuFerramentasTelaDeFundoRestaurarPadrao = new javax.swing.JMenuItem();
-        menuFerramentasSobreOSistema = new javax.swing.JMenu();
+        menuFerramentasSobreOSistema = new javax.swing.JMenuItem();
         menuBarSair = new javax.swing.JMenu();
 
+        jPanel1.setBackground(new java.awt.Color(102, 153, 255));
+
+        jPanel3.add(jPanel4);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Royal Hotel - Tela Principal");
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel6.add(jSeparator1);
+
+        label1.setText("Sistema de Gerenciamento de Hotel - Desenvolvido por Heric Alves Campos - Todos os diteritos reservados - 2024\n");
+        jPanel6.add(label1);
 
         menuCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/cadastro.png"))); // NOI18N
         menuCadastro.setText("Cadastros   |");
+        menuCadastro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadHospede.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_hospede.png"))); // NOI18N
         menuCadHospede.setText("Hospedes");
+        menuCadHospede.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadHospedeCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_salvar.png"))); // NOI18N
         menuCadHospedeCadastrar.setText("Cadastrar");
+        menuCadHospedeCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadHospede.add(menuCadHospedeCadastrar);
 
         menuCadHospedeConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_buscar.png"))); // NOI18N
         menuCadHospedeConsultar.setText("Consultar");
+        menuCadHospedeConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadHospedeConsultar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuCadHospedeConsultarActionPerformed(evt);
@@ -112,61 +144,76 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuCadQuartos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_quarto.png"))); // NOI18N
         menuCadQuartos.setText("Quartos");
+        menuCadQuartos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadQuartosCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_quarto.png"))); // NOI18N
         menuCadQuartosCadastrar.setText("Cadastrar");
+        menuCadQuartosCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadQuartos.add(menuCadQuartosCadastrar);
 
         menuCadQuartosConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/buscar.png"))); // NOI18N
         menuCadQuartosConsultar.setText("Consultar");
+        menuCadQuartosConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadQuartos.add(menuCadQuartosConsultar);
 
         menuCadastro.add(menuCadQuartos);
 
         menuCadFuncionarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_funcionario.png"))); // NOI18N
         menuCadFuncionarios.setText("Funcionários");
+        menuCadFuncionarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadFuncionariosCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_salvar.png"))); // NOI18N
         menuCadFuncionariosCadastrar.setText("Cadastrar");
+        menuCadFuncionariosCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadFuncionarios.add(menuCadFuncionariosCadastrar);
 
         menuCadFuncionariosConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_buscar.png"))); // NOI18N
         menuCadFuncionariosConsultar.setText("Consultar");
+        menuCadFuncionariosConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadFuncionarios.add(menuCadFuncionariosConsultar);
 
         menuCadastro.add(menuCadFuncionarios);
 
         menuCadFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_fornecedor.png"))); // NOI18N
         menuCadFornecedores.setText("Fornecedores");
+        menuCadFornecedores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadFornecedoresCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_salvar.png"))); // NOI18N
         menuCadFornecedoresCadastrar.setText("Cadastrar");
+        menuCadFornecedoresCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadFornecedores.add(menuCadFornecedoresCadastrar);
 
         menuCadFornecedoresConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_buscar.png"))); // NOI18N
         menuCadFornecedoresConsultar.setText("Consultar");
+        menuCadFornecedoresConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadFornecedores.add(menuCadFornecedoresConsultar);
 
         menuCadastro.add(menuCadFornecedores);
 
         menuCadProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_produtos.png"))); // NOI18N
         menuCadProdutos.setText("Produtos");
+        menuCadProdutos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadProdutosCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_vender.png"))); // NOI18N
         menuCadProdutosCadastrar.setText("Cadastrar");
+        menuCadProdutosCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadProdutos.add(menuCadProdutosCadastrar);
 
         menuCadProdutosConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/buscar.png"))); // NOI18N
         menuCadProdutosConsultar.setText("Consultar");
+        menuCadProdutosConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadProdutos.add(menuCadProdutosConsultar);
 
         menuCadastro.add(menuCadProdutos);
 
         menuCadServicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_servicos.png"))); // NOI18N
         menuCadServicos.setText("Serviços");
+        menuCadServicos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadServicosCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_vender.png"))); // NOI18N
         menuCadServicosCadastro.setText("Cadastro");
+        menuCadServicosCadastro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        menuCadServicosCadastro.setFocusable(true);
         menuCadServicosCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuCadServicosCadastroActionPerformed(evt);
@@ -176,6 +223,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuCadServicosConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/buscar.png"))); // NOI18N
         menuCadServicosConsultar.setText("Consultar");
+        menuCadServicosConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadServicos.add(menuCadServicosConsultar);
 
         menuCadastro.add(menuCadServicos);
@@ -184,63 +232,95 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuReservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/reservas.png"))); // NOI18N
         menuReservas.setText("Reservas   |");
+        menuReservas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuReservasCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_checkin.png"))); // NOI18N
         menuReservasCadastrar.setText("Cadastrar Reserva");
+        menuReservasCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuReservas.add(menuReservasCadastrar);
 
+        menuReservasConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_Con_checkin.png"))); // NOI18N
         menuReservasConsultar.setText("Consultar Reserva");
+        menuReservasConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuReservas.add(menuReservasConsultar);
 
+        menuReservasFinalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_checkout.png"))); // NOI18N
         menuReservasFinalizar.setText("Finalizar Reserva");
+        menuReservasFinalizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuReservas.add(menuReservasFinalizar);
 
         jMenuBar1.add(menuReservas);
 
         menuVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/consumo.png"))); // NOI18N
         menuVendas.setText("Vendas   |");
+        menuVendas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuVendasProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_produtos.png"))); // NOI18N
         menuVendasProdutos.setText("Produtos");
+        menuVendasProdutos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuVendas.add(menuVendasProdutos);
 
+        menuVendasServicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_servicos.png"))); // NOI18N
         menuVendasServicos.setText("Serviços");
+        menuVendasServicos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuVendas.add(menuVendasServicos);
 
         jMenuBar1.add(menuVendas);
 
         menuFinaceiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/financeiro.png"))); // NOI18N
         menuFinaceiro.setText("Financeiro   |");
+        menuFinaceiro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuFinaceiroContasAPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_conta_paga.png"))); // NOI18N
         menuFinaceiroContasAPagar.setText("Contas a Pagar");
+        menuFinaceiroContasAPagar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuFinaceiroContasAPagarCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_cad_conta.png"))); // NOI18N
         menuFinaceiroContasAPagarCadastrar.setText("Cadastar");
+        menuFinaceiroContasAPagarCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFinaceiroContasAPagar.add(menuFinaceiroContasAPagarCadastrar);
 
+        menuFinaceiroContasAPagarConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_conta_consulta.png"))); // NOI18N
         menuFinaceiroContasAPagarConsultar.setText("Consultar");
+        menuFinaceiroContasAPagarConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFinaceiroContasAPagar.add(menuFinaceiroContasAPagarConsultar);
 
         menuFinaceiro.add(menuFinaceiroContasAPagar);
 
+        menuFinaceiroContasAReceber.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_conta_recebe.png"))); // NOI18N
         menuFinaceiroContasAReceber.setText("Contas a Receber");
+        menuFinaceiroContasAReceber.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuFinaceiroContasAReceberCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_cad_conta.png"))); // NOI18N
         menuFinaceiroContasAReceberCadastrar.setText("Cadastrar");
+        menuFinaceiroContasAReceberCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFinaceiroContasAReceber.add(menuFinaceiroContasAReceberCadastrar);
 
+        menuFinaceiroContasAReceberConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_conta_consulta.png"))); // NOI18N
         menuFinaceiroContasAReceberConsultar.setText("Consultar");
+        menuFinaceiroContasAReceberConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFinaceiroContasAReceber.add(menuFinaceiroContasAReceberConsultar);
 
         menuFinaceiro.add(menuFinaceiroContasAReceber);
 
+        menuFinaceiroBalanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_balanco.png"))); // NOI18N
         menuFinaceiroBalanco.setText("Balanço");
+        menuFinaceiroBalanco.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFinaceiro.add(menuFinaceiroBalanco);
 
         jMenuBar1.add(menuFinaceiro);
 
         menuRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/relatorios.png"))); // NOI18N
         menuRelatorios.setText("Relatorios   |");
+        menuRelatorios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuRelatoriosFinanceiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_financeiro.png"))); // NOI18N
         menuRelatoriosFinanceiro.setText("Financeiro");
+        menuRelatoriosFinanceiro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuRelatoriosFinanceiroContasAPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_financeiro.png"))); // NOI18N
         menuRelatoriosFinanceiroContasAPagar.setText("Contas a Pagar");
+        menuRelatoriosFinanceiroContasAPagar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosFinanceiroContasAPagar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuRelatoriosFinanceiroContasAPagarActionPerformed(evt);
@@ -248,71 +328,119 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         menuRelatoriosFinanceiro.add(menuRelatoriosFinanceiroContasAPagar);
 
+        menuRelatoriosFinanceiroContasAReceber.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_financeiro.png"))); // NOI18N
         menuRelatoriosFinanceiroContasAReceber.setText("Contas a Receber");
+        menuRelatoriosFinanceiroContasAReceber.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosFinanceiro.add(menuRelatoriosFinanceiroContasAReceber);
 
+        menuRelatoriosFinanceiroBalanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_financeiro.png"))); // NOI18N
         menuRelatoriosFinanceiroBalanco.setText("Balanço");
+        menuRelatoriosFinanceiroBalanco.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosFinanceiro.add(menuRelatoriosFinanceiroBalanco);
 
         menuRelatorios.add(menuRelatoriosFinanceiro);
 
+        menuRelatoriosReservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_reserva.png"))); // NOI18N
         menuRelatoriosReservas.setText("Reservas");
+        menuRelatoriosReservas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuRelatoriosReservasQuartosDisponiveis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_reserva.png"))); // NOI18N
         menuRelatoriosReservasQuartosDisponiveis.setText("Quartos Disponíveis");
+        menuRelatoriosReservasQuartosDisponiveis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosReservas.add(menuRelatoriosReservasQuartosDisponiveis);
 
+        menuRelatoriosReservasQuartosOcupados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_reserva.png"))); // NOI18N
         menuRelatoriosReservasQuartosOcupados.setText("Quartos Ocupados");
+        menuRelatoriosReservasQuartosOcupados.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        menuRelatoriosReservasQuartosOcupados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuRelatoriosReservasQuartosOcupadosActionPerformed(evt);
+            }
+        });
         menuRelatoriosReservas.add(menuRelatoriosReservasQuartosOcupados);
 
+        menuRelatoriosReservasFuturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_reserva.png"))); // NOI18N
         menuRelatoriosReservasFuturas.setText("Reservas Futuras");
+        menuRelatoriosReservasFuturas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosReservas.add(menuRelatoriosReservasFuturas);
 
         menuRelatorios.add(menuRelatoriosReservas);
 
+        menuRelatoriosVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_produto.png"))); // NOI18N
         menuRelatoriosVendas.setText("Vendas");
+        menuRelatoriosVendas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuRelatoriosVendasProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_produto.png"))); // NOI18N
         menuRelatoriosVendasProdutos.setText("Produtos");
+        menuRelatoriosVendasProdutos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosVendas.add(menuRelatoriosVendasProdutos);
 
+        menuRelatoriosVendasServicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_produto.png"))); // NOI18N
         menuRelatoriosVendasServicos.setText("Serviços");
+        menuRelatoriosVendasServicos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatoriosVendas.add(menuRelatoriosVendasServicos);
 
         menuRelatorios.add(menuRelatoriosVendas);
 
+        menuRelatoriosHospedes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_pessoas.png"))); // NOI18N
         menuRelatoriosHospedes.setText("Hospedes");
+        menuRelatoriosHospedes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        menuRelatoriosHospedes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuRelatoriosHospedesActionPerformed(evt);
+            }
+        });
         menuRelatorios.add(menuRelatoriosHospedes);
 
+        menuRelatoriosFuncionarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_pessoas.png"))); // NOI18N
         menuRelatoriosFuncionarios.setText("Funcionários");
+        menuRelatoriosFuncionarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatorios.add(menuRelatoriosFuncionarios);
 
+        menuRelatoriosFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_rela_pessoas.png"))); // NOI18N
         menuRelatoriosFornecedores.setText("Fornecedores");
+        menuRelatoriosFornecedores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuRelatorios.add(menuRelatoriosFornecedores);
 
         jMenuBar1.add(menuRelatorios);
 
         menuSeguranca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/seguranca.png"))); // NOI18N
         menuSeguranca.setText("Segurança   |");
+        menuSeguranca.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuSegurancaFazerBackup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_backup.png"))); // NOI18N
         menuSegurancaFazerBackup.setText("Fazer Backup");
+        menuSegurancaFazerBackup.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuSeguranca.add(menuSegurancaFazerBackup);
 
+        menuSegurancaRestaurarBackup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_restaura.png"))); // NOI18N
         menuSegurancaRestaurarBackup.setText("Restaurar Backup");
+        menuSegurancaRestaurarBackup.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuSeguranca.add(menuSegurancaRestaurarBackup);
 
         jMenuBar1.add(menuSeguranca);
 
         menuFerramentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/ferramentas.png"))); // NOI18N
         menuFerramentas.setText("Ferramentas   |");
+        menuFerramentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuFerramentasTelaDeFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_img.png"))); // NOI18N
         menuFerramentasTelaDeFundo.setText("Tela de Fundo");
+        menuFerramentasTelaDeFundo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        menuFerramentasTelaDeFundoAddImagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_img_add.png"))); // NOI18N
         menuFerramentasTelaDeFundoAddImagem.setText("Add Imagem");
+        menuFerramentasTelaDeFundoAddImagem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFerramentasTelaDeFundo.add(menuFerramentasTelaDeFundoAddImagem);
 
+        menuFerramentasTelaDeFundoRemoverImagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_img_remove.png"))); // NOI18N
         menuFerramentasTelaDeFundoRemoverImagem.setText("Remover Imagem");
+        menuFerramentasTelaDeFundoRemoverImagem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFerramentasTelaDeFundo.add(menuFerramentasTelaDeFundoRemoverImagem);
 
+        menuFerramentasTelaDeFundoRestaurarPadrao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_img_padrao.png"))); // NOI18N
         menuFerramentasTelaDeFundoRestaurarPadrao.setText("Restaurar Padrão");
+        menuFerramentasTelaDeFundoRestaurarPadrao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFerramentasTelaDeFundoRestaurarPadrao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuFerramentasTelaDeFundoRestaurarPadraoActionPerformed(evt);
@@ -322,16 +450,50 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuFerramentas.add(menuFerramentasTelaDeFundo);
 
+        menuFerramentasSobreOSistema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon_sistema.png"))); // NOI18N
         menuFerramentasSobreOSistema.setText("Sobre o Sistema");
+        menuFerramentasSobreOSistema.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuFerramentas.add(menuFerramentasSobreOSistema);
 
         jMenuBar1.add(menuFerramentas);
 
         menuBarSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sair.png"))); // NOI18N
         menuBarSair.setText("Sair");
+        menuBarSair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenuBar1.add(menuBarSair);
 
         setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 1597, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1597, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(607, 607, 607)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 675, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -351,6 +513,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void menuFerramentasTelaDeFundoRestaurarPadraoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuFerramentasTelaDeFundoRestaurarPadraoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuFerramentasTelaDeFundoRestaurarPadraoActionPerformed
+
+    private void menuRelatoriosHospedesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuRelatoriosHospedesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuRelatoriosHospedesActionPerformed
+
+    private void menuRelatoriosReservasQuartosOcupadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuRelatoriosReservasQuartosOcupadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuRelatoriosReservasQuartosOcupadosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -388,7 +558,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JFrame jFrame2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private java.awt.Label label1;
     private javax.swing.JMenu menuBarSair;
     private javax.swing.JMenu menuCadFornecedores;
     private javax.swing.JMenuItem menuCadFornecedoresCadastrar;
@@ -410,13 +592,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuCadServicosConsultar;
     private javax.swing.JMenu menuCadastro;
     private javax.swing.JMenu menuFerramentas;
-    private javax.swing.JMenu menuFerramentasSobreOSistema;
+    private javax.swing.JMenuItem menuFerramentasSobreOSistema;
     private javax.swing.JMenu menuFerramentasTelaDeFundo;
     private javax.swing.JMenuItem menuFerramentasTelaDeFundoAddImagem;
     private javax.swing.JMenuItem menuFerramentasTelaDeFundoRemoverImagem;
     private javax.swing.JMenuItem menuFerramentasTelaDeFundoRestaurarPadrao;
     private javax.swing.JMenu menuFinaceiro;
-    private javax.swing.JMenu menuFinaceiroBalanco;
+    private javax.swing.JMenuItem menuFinaceiroBalanco;
     private javax.swing.JMenu menuFinaceiroContasAPagar;
     private javax.swing.JMenuItem menuFinaceiroContasAPagarCadastrar;
     private javax.swing.JMenuItem menuFinaceiroContasAPagarConsultar;
@@ -428,9 +610,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuRelatoriosFinanceiroBalanco;
     private javax.swing.JMenuItem menuRelatoriosFinanceiroContasAPagar;
     private javax.swing.JMenuItem menuRelatoriosFinanceiroContasAReceber;
-    private javax.swing.JMenu menuRelatoriosFornecedores;
-    private javax.swing.JMenu menuRelatoriosFuncionarios;
-    private javax.swing.JMenu menuRelatoriosHospedes;
+    private javax.swing.JMenuItem menuRelatoriosFornecedores;
+    private javax.swing.JMenuItem menuRelatoriosFuncionarios;
+    private javax.swing.JMenuItem menuRelatoriosHospedes;
     private javax.swing.JMenu menuRelatoriosReservas;
     private javax.swing.JMenuItem menuRelatoriosReservasFuturas;
     private javax.swing.JMenuItem menuRelatoriosReservasQuartosDisponiveis;
@@ -439,14 +621,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuRelatoriosVendasProdutos;
     private javax.swing.JMenuItem menuRelatoriosVendasServicos;
     private javax.swing.JMenu menuReservas;
-    private javax.swing.JMenu menuReservasCadastrar;
-    private javax.swing.JMenu menuReservasConsultar;
-    private javax.swing.JMenu menuReservasFinalizar;
+    private javax.swing.JMenuItem menuReservasCadastrar;
+    private javax.swing.JMenuItem menuReservasConsultar;
+    private javax.swing.JMenuItem menuReservasFinalizar;
     private javax.swing.JMenu menuSeguranca;
-    private javax.swing.JMenu menuSegurancaFazerBackup;
-    private javax.swing.JMenu menuSegurancaRestaurarBackup;
+    private javax.swing.JMenuItem menuSegurancaFazerBackup;
+    private javax.swing.JMenuItem menuSegurancaRestaurarBackup;
     private javax.swing.JMenu menuVendas;
-    private javax.swing.JMenu menuVendasProdutos;
-    private javax.swing.JMenu menuVendasServicos;
+    private javax.swing.JMenuItem menuVendasProdutos;
+    private javax.swing.JMenuItem menuVendasServicos;
+    private java.awt.Panel panel1;
     // End of variables declaration//GEN-END:variables
 }
